@@ -20,7 +20,7 @@ Chào bạn, đây là repo chứa mã nguồn của các bài viết về seri 
 
 ### Liên hệ
 
-> Nếu bạn có đóng góp hay nhân xét về seri này, cách viết bài, cũng như nội dung truyền tải. Thì mình rất rất cảm ơn. Nếu có bất cứ vấn đề gì thì bạn có thể liên lạc theo các địa chĩ dưới đây.
+> Nếu bạn có đóng góp hay nhân xét về seri này, cách viết bài, cũng như nội dung truyền tải. Thì mình rất rất cảm ơn. Nếu có bất cứ vấn đề gì thì bạn có thể liên lạc theo các địa chỉ dưới đây.
 
 * Website: https://fxstudio.dev/contact/
 * Email: lephuongtien.dev@gmail.com
