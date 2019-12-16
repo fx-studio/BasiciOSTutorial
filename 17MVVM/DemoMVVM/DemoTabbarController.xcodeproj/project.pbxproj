@@ -31,6 +31,7 @@
 		9E3CAA8E23A76BE100DD9B10 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3CAA8B23A76BE100DD9B10 /* BaseViewController.swift */; };
 		9E3CAA8F23A76BE100DD9B10 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3CAA8C23A76BE100DD9B10 /* BaseNavigationController.swift */; };
 		9E3CAA9123A776C100DD9B10 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3CAA9023A776C100DD9B10 /* DataManager.swift */; };
+		9E3CAA9323A78C0400DD9B10 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3CAA9223A78C0400DD9B10 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		9E3CAA8B23A76BE100DD9B10 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9E3CAA8C23A76BE100DD9B10 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		9E3CAA9023A776C100DD9B10 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		9E3CAA9223A78C0400DD9B10 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			children = (
 				9E375A84239A019900670911 /* HomeViewController.swift */,
 				9E375A85239A019900670911 /* HomeViewController.xib */,
+				9E3CAA9223A78C0400DD9B10 /* HomeViewModel.swift */,
 			);
 			path = HomeVC;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				9E3CAA8E23A76BE100DD9B10 /* BaseViewController.swift in Sources */,
 				9E3CAA9123A776C100DD9B10 /* DataManager.swift in Sources */,
 				9E3CAA8523A76BCA00DD9B10 /* RegisterViewController.swift in Sources */,
+				9E3CAA9323A78C0400DD9B10 /* HomeViewModel.swift in Sources */,
 				9E3CAA8623A76BCA00DD9B10 /* RegisterViewModel.swift in Sources */,
 				9E3CAA8723A76BCA00DD9B10 /* ForgotPasswordViewController.swift in Sources */,
 				9E3CAA7A23A76BB200DD9B10 /* LoginViewController.swift in Sources */,

@@ -33,6 +33,9 @@ final class LoginViewModel {
             self.email = ""
             self.password = ""
             
+            //save data
+            DataManager.shared().save(email: email, password: password)
+            
             //callback
             completion(.success)
         }

@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="DemoTabbarController" customModuleProvider="target">
             <connections>
+                <outlet property="emailLabel" destination="KFR-fj-leb" id="xlG-QW-kFl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,13 +18,13 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFR-fj-leb">
-                    <rect key="frame" x="144.5" y="430" width="125" height="36"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home VC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFR-fj-leb">
+                    <rect key="frame" x="57" y="430" width="300" height="36"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="YJb-FL-rek"/>
-                        <constraint firstAttribute="width" constant="125" id="hJt-FR-6dC"/>
+                        <constraint firstAttribute="width" constant="300" id="hJt-FR-6dC"/>
                     </constraints>
-                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
