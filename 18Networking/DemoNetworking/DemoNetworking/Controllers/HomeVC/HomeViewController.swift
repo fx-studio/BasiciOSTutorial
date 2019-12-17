@@ -39,19 +39,26 @@ class HomeViewController: BaseViewController {
     }
     
     func updateUI() {
-        
+        tableview.reloadData()
     }
 
     //MARK: - API
     @objc func loadAPI() {
         print("LOAD API")
+        viewmodel.loadAPI2 { (done, msg) in
+            if done {
+                self.updateUI()
+            } else {
+                print("API ERROR: \(msg)")
+            }
+        }
     }
 }
 
 //MARK: - Tableview Delegate & Datasource
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        viewmodel.musics.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -61,8 +68,26 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HomeCell
         
+        let item = viewmodel.musics[indexPath.row]
+        cell.titleLabel.text = item.name
+        cell.artistNameLabel.text = item.artistName
+        
+        if item.thumbnailImage != nil {
+            cell.thumbnail.image = item.thumbnailImage
+        } else {
+            cell.thumbnail.image = nil
+            
+            //downloader
+            Networking.shared().downloadImage(url: item.artworkUrl100) { (image) in
+                if let image = image {
+                    cell.thumbnail.image = image
+                    item.thumbnailImage = image
+                } else {
+                    cell.thumbnail.image = nil
+                }
+            }
+        }
+        
         return cell
     }
-    
-    
 }

@@ -7,9 +7,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="DemoNetworking" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessagesViewController" customModule="DemoTabbarController" customModuleProvider="target">
             <connections>
-                <outlet property="tableview" destination="kus-L6-rgm" id="OlZ-85-X87"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,17 +17,21 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kus-L6-rgm">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Messages VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uy4-bS-zlF">
+                    <rect key="frame" x="117.5" y="430" width="179" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="XUJ-Aa-XaX"/>
+                        <constraint firstAttribute="width" constant="179" id="isj-ij-sWl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="kus-L6-rgm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="lJ4-vg-byd"/>
-                <constraint firstItem="kus-L6-rgm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="o0l-Xa-s0F"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kus-L6-rgm" secondAttribute="bottom" id="q6C-uc-G64"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kus-L6-rgm" secondAttribute="trailing" id="zON-ZD-4lV"/>
+                <constraint firstItem="Uy4-bS-zlF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IEX-an-Udz"/>
+                <constraint firstItem="Uy4-bS-zlF" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ntZ-nV-dqD"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="132" y="133"/>
