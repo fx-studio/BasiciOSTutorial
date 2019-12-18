@@ -45,7 +45,7 @@ class HomeViewController: BaseViewController {
     //MARK: - API
     @objc func loadAPI() {
         print("LOAD API")
-        viewmodel.loadAPI2 { (done, msg) in
+        viewmodel.loadAPI3 { (done, msg) in
             if done {
                 self.updateUI()
             } else {

@@ -80,4 +80,20 @@ class HomeViewModel {
             }
         }
     }
+    
+    func loadAPI3(completion: @escaping Completion) {
+        APIManager.Music.getHotMusic { (result) in
+            switch result {
+            case .failure(let error):
+                //call back
+                completion(false, error.localizedDescription)
+                
+            case .success(let musicResult):
+                self.musics.append(contentsOf: musicResult.musics)
+                
+                //call back
+                completion(true, "")
+            }
+        }
+    }
 }

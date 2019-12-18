@@ -40,6 +40,7 @@
 		9E87460623A885890084CE7A /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8745E923A885890084CE7A /* BaseTabBarController.swift */; };
 		9E87460723A885890084CE7A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8745EA23A885890084CE7A /* BaseViewController.swift */; };
 		9E87460823A885890084CE7A /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8745EB23A885890084CE7A /* BaseNavigationController.swift */; };
+		9E9B0B5023AA137800DCA3FA /* API.Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B0B4F23AA137800DCA3FA /* API.Music.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		9E8745E923A885890084CE7A /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		9E8745EA23A885890084CE7A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9E8745EB23A885890084CE7A /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		9E9B0B4F23AA137800DCA3FA /* API.Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.Music.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				9E8745C723A885890084CE7A /* Core */,
+				9E9B0B4F23AA137800DCA3FA /* API.Music.swift */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -194,9 +197,9 @@
 		9E8745C723A885890084CE7A /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				9E8745CA23A885890084CE7A /* API.swift */,
 				9E8745C823A885890084CE7A /* API.Request.swift */,
 				9E8745C923A885890084CE7A /* API.Manager.swift */,
-				9E8745CA23A885890084CE7A /* API.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				9E87460823A885890084CE7A /* BaseNavigationController.swift in Sources */,
 				9E8745FA23A885890084CE7A /* LoginViewController.swift in Sources */,
 				9E87452623A86A2D0084CE7A /* AppDelegate.swift in Sources */,
+				9E9B0B5023AA137800DCA3FA /* API.Music.swift in Sources */,
 				9E8745F523A885890084CE7A /* HomeViewModel.swift in Sources */,
 				9E8745FD23A885890084CE7A /* RegisterViewModel.swift in Sources */,
 				9E8745FE23A885890084CE7A /* FriendsViewController.swift in Sources */,
