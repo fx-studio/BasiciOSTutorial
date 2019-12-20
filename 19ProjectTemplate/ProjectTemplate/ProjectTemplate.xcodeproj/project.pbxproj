@@ -48,6 +48,8 @@
 		9E0BCB9423AB844E008DEC2D /* Data.Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0BCB9323AB844D008DEC2D /* Data.Ext.swift */; };
 		9E0BCB9623AB845E008DEC2D /* Color.Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0BCB9523AB845E008DEC2D /* Color.Ext.swift */; };
 		9E0BCB9823AB846D008DEC2D /* String.Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0BCB9723AB846D008DEC2D /* String.Ext.swift */; };
+		9EFB4AF823AC78EA0072ABE4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFB4AF723AC78EA0072ABE4 /* HomeViewModel.swift */; };
+		9EFB4AFA23AC78FF0072ABE4 /* HomeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFB4AF923AC78FF0072ABE4 /* HomeCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,8 @@
 		9E0BCB9323AB844D008DEC2D /* Data.Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.Ext.swift; sourceTree = "<group>"; };
 		9E0BCB9523AB845E008DEC2D /* Color.Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.Ext.swift; sourceTree = "<group>"; };
 		9E0BCB9723AB846D008DEC2D /* String.Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.Ext.swift; sourceTree = "<group>"; };
+		9EFB4AF723AC78EA0072ABE4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		9EFB4AF923AC78FF0072ABE4 /* HomeCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellViewModel.swift; sourceTree = "<group>"; };
 		F4A0636B50D27B813C92EC3E /* Pods-ProjectTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectTemplate.release.xcconfig"; path = "Target Support Files/Pods-ProjectTemplate/Pods-ProjectTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		F854CC1D13318B6CAF91870C /* Pods_ProjectTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -232,6 +236,7 @@
 				9E0BCB6F23AB7F2F008DEC2D /* Cells */,
 				9E0BCB4923AB6376008DEC2D /* HomeViewController.swift */,
 				9E0BCB4A23AB6376008DEC2D /* HomeViewController.xib */,
+				9EFB4AF723AC78EA0072ABE4 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 			children = (
 				9E0BCB7023AB7F48008DEC2D /* HomeCell.swift */,
 				9E0BCB7123AB7F48008DEC2D /* HomeCell.xib */,
+				9EFB4AF923AC78FF0072ABE4 /* HomeCellViewModel.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -501,6 +507,8 @@
 				9E0BCB5023AB7793008DEC2D /* App.Key.swift in Sources */,
 				9E0BCB6C23AB7ECE008DEC2D /* MyDatePickerView.swift in Sources */,
 				9E0BCB7223AB7F48008DEC2D /* HomeCell.swift in Sources */,
+				9EFB4AFA23AC78FF0072ABE4 /* HomeCellViewModel.swift in Sources */,
+				9EFB4AF823AC78EA0072ABE4 /* HomeViewModel.swift in Sources */,
 				9E0BCB4523AB6332008DEC2D /* BaseNavigationController.swift in Sources */,
 				9E0BCB6423AB7A0B008DEC2D /* MessagesViewController.swift in Sources */,
 				9E0BCB2823AB5D87008DEC2D /* AppDelegate.swift in Sources */,
