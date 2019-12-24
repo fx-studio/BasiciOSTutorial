@@ -44,6 +44,10 @@ class HomeViewController: UIViewController {
     }
 
     func setupData() {
+//        save(name: "Tí", age: 10, gender: true)
+//        save(name: "Tèo", age: 12, gender: true)
+//        save(name: "Linh", age: 9, gender: false)
+//        save(name: "Trang", age: 8, gender: false)
         initializeFetchedResultsController()
     }
     
@@ -99,6 +103,33 @@ class HomeViewController: UIViewController {
          
          present(alert, animated: true)
     }
+    
+    //MARK: - Dummy Data
+    func save(name: String, age: Int, gender: Bool) {
+        //Lấy AppDelegate
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        
+        //lấy Managed Object Contexxt
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        //Tạo Entity Name
+        let entity = NSEntityDescription.entity(forEntityName: "User", in: managedContext)!
+        
+        //New Object và insert vào Managed Object Context
+        let user = NSManagedObject(entity: entity, insertInto: managedContext)
+        
+        //Gán giá trị cho các thuộc tính của object
+        user.setValue(name, forKeyPath: "name")
+        user.setValue(age, forKeyPath: "age")
+        user.setValue(gender, forKeyPath: "gender")
+        
+        do {
+            //lưu lại
+            try managedContext.save()
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
 }
 
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
@@ -126,7 +157,10 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let vc = EditViewController()
+        
+        //lấy đối tượng và gán
         vc.user = fetchedResultsController.object(at: indexPath)
+        
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -162,6 +196,9 @@ extension HomeViewController: NSFetchedResultsControllerDelegate {
         
         // Create Fetch Request
         let fetchRequest: NSFetchRequest<User> = User.fetchRequest()
+        
+        //Predicate
+        //fetchRequest.predicate = NSPredicate(format: "gender == true")
 
         // Configure Fetch Request
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
