@@ -41,6 +41,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     return cell
   }
   
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    print("DDDDDDDDDDDDDDĐDDD")
+  }
+  
   func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
     
     // delete
