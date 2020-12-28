@@ -121,7 +121,7 @@ class HomeViewModel {
     func sub(number1: Int, number2: Int, completed:(Float, String?) -> Void) {
         self.number1 = number1
         self.number2 = number2
-        self.result = Float(number1) * Float(number2)
+        self.result = Float(number1) - Float(number2)
         
         completed(result, nil)
     }
@@ -129,7 +129,7 @@ class HomeViewModel {
     func mul(number1: Int, number2: Int, completed:(Float, String?) -> Void) {
         self.number1 = number1
         self.number2 = number2
-        self.result = Float(number1) - Float(number2)
+        self.result = Float(number1) * Float(number2)
         
         completed(result, nil)
     }
@@ -163,7 +163,7 @@ class HomeViewModel {
     func sub2(number1: Int, number2: Int, completed:ResultCompletion) {
         self.number1 = number1
         self.number2 = number2
-        self.result = Float(number1) * Float(number2)
+        self.result = Float(number1) - Float(number2)
         
         completed(result, nil)
     }
@@ -171,7 +171,7 @@ class HomeViewModel {
     func mul2(number1: Int, number2: Int, completed: ResultCompletion) {
         self.number1 = number1
         self.number2 = number2
-        self.result = Float(number1) - Float(number2)
+        self.result = Float(number1) * Float(number2)
         
         completed(result, nil)
     }

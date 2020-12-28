@@ -61,11 +61,11 @@ class HomeViewController: UIViewController {
         
         if let num1 = Int(number1TextField.text!),
            let num2 = Int(number2TextField.text!) {
-            
+
             viewmodel.add(number1: num1, number2: num2) { (result, errorMessage) in
                 if let error = errorMessage {
                     resultLabel.text = "\(error)"
-                    
+
                 } else {
                     resultLabel.text = "\(result)"
                 }
