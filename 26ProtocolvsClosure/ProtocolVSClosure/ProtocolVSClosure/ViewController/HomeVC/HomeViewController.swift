@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
 
     // MARK: - Config
     func setupUI() {
-        title = "Protocol vs. Closure"
+        title = "Passing Data & Call back"
     }
     
     func setupData() {
