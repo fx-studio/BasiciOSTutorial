@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19115.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19115.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kpm-We-oGI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19107.4"/>
@@ -9,6 +9,68 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="h7p-bh-ajw">
+            <objects>
+                <navigationController id="kpm-We-oGI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k3r-Y9-f9j">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cGU-IH-C1B" kind="relationship" relationship="rootViewController" id="4h7-RN-5KZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p8l-q8-eNa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1736" y="106"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="0Oa-lZ-MGK">
+            <objects>
+                <viewController id="cGU-IH-C1B" customClass="HomeViewController" customModule="DemoAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="td3-HX-Xyd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4xi-vw-57B">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Obq-fT-zPa"/>
+                                    <constraint firstAttribute="width" constant="300" id="zHN-yD-xcY"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHg-6g-BrC">
+                                <rect key="frame" x="176" y="777" width="62" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="CRd-uR-I0m"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="62" id="a42-Iz-ysz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start"/>
+                                <connections>
+                                    <action selector="start:" destination="cGU-IH-C1B" eventType="touchUpInside" id="T9l-JO-DYB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gv3-m3-3hP"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4xi-vw-57B" firstAttribute="centerY" secondItem="td3-HX-Xyd" secondAttribute="centerY" id="UpB-ia-9rJ"/>
+                            <constraint firstItem="4xi-vw-57B" firstAttribute="centerX" secondItem="td3-HX-Xyd" secondAttribute="centerX" id="VgP-3k-UTi"/>
+                            <constraint firstItem="gv3-m3-3hP" firstAttribute="bottom" secondItem="mHg-6g-BrC" secondAttribute="bottom" constant="50" id="ahT-yj-Mrw"/>
+                            <constraint firstItem="mHg-6g-BrC" firstAttribute="centerX" secondItem="td3-HX-Xyd" secondAttribute="centerX" id="dbd-vy-AJw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CyG-xg-KcF"/>
+                    <connections>
+                        <outlet property="imageView" destination="4xi-vw-57B" id="9nr-3D-doS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iwl-bS-DEq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-904.34782608695662" y="105.80357142857143"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>

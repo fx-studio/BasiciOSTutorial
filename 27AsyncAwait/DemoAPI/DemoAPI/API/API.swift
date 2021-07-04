@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 // MARK: Extensions
 extension URLSession {
@@ -74,5 +75,30 @@ func fetchAPI<T: Decodable>(url: URL, completion: @escaping (Result<T, Error>) -
         }
     }
     .resume()
+}
+
+// MARK: - IMAGE DOWNLOADER
+func fetchImage(url: URL, completion: @escaping (UIImage?) -> ()) {
+    URLSession.shared.dataTask(with: url) { data, response, error in
+        if error != nil {
+            completion(nil)
+            return
+        }
+        
+        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200, let data = data else {
+            completion(nil)
+            return
+        }
+        
+        let image = UIImage(data: data)
+        completion(image)
+    }
+    .resume()
+}
+
+func fetchImage(url: URL) async throws -> UIImage? {
+    let (data, _)  = try await URLSession.shared.data(from: url)
+    return UIImage(data: data)
+
 }
 

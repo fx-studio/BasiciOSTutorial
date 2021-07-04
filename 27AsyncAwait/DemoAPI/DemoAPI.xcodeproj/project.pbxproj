@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E663AE6269075E900768D7D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E663AE5269075E900768D7D /* HomeViewController.swift */; };
+		9E76DA72268EB7FD00123F5E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76DA71268EB7FD00123F5E /* WelcomeViewController.swift */; };
+		9E76DA75268EC14F00123F5E /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76DA74268EC14F00123F5E /* WelcomeViewModel.swift */; };
+		9E76DA77268F14ED00123F5E /* WelcomeViewModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76DA76268F14ED00123F5E /* WelcomeViewModel2.swift */; };
 		9EAB646A2685725200AC14F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB64692685725200AC14F8 /* AppDelegate.swift */; };
 		9EAB646C2685725200AC14F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB646B2685725200AC14F8 /* SceneDelegate.swift */; };
 		9EAB646E2685725200AC14F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB646D2685725200AC14F8 /* ViewController.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E663AE5269075E900768D7D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9E76DA71268EB7FD00123F5E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		9E76DA74268EC14F00123F5E /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		9E76DA76268F14ED00123F5E /* WelcomeViewModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel2.swift; sourceTree = "<group>"; };
 		9EAB64662685725200AC14F8 /* DemoAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EAB64692685725200AC14F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EAB646B2685725200AC14F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +53,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E663AE4269075D900768D7D /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				9E663AE5269075E900768D7D /* HomeViewController.swift */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		9E76DA73268EC13F00123F5E /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				9E76DA71268EB7FD00123F5E /* WelcomeViewController.swift */,
+				9E76DA74268EC14F00123F5E /* WelcomeViewModel.swift */,
+				9E76DA76268F14ED00123F5E /* WelcomeViewModel2.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
 		9EAB645D2685725200AC14F8 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +103,8 @@
 		9EAB647D2685732A00AC14F8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9E663AE4269075D900768D7D /* HomeVC */,
+				9E76DA73268EC13F00123F5E /* Welcome */,
 				9EAB646D2685725200AC14F8 /* ViewController.swift */,
 				9EAB646F2685725200AC14F8 /* Main.storyboard */,
 			);
@@ -191,9 +219,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EAB646E2685725200AC14F8 /* ViewController.swift in Sources */,
+				9E76DA75268EC14F00123F5E /* WelcomeViewModel.swift in Sources */,
 				9EAB646A2685725200AC14F8 /* AppDelegate.swift in Sources */,
 				9EAB646C2685725200AC14F8 /* SceneDelegate.swift in Sources */,
+				9E76DA77268F14ED00123F5E /* WelcomeViewModel2.swift in Sources */,
+				9E76DA72268EB7FD00123F5E /* WelcomeViewController.swift in Sources */,
 				9EAB64852685748D00AC14F8 /* Drink.swift in Sources */,
+				9E663AE6269075E900768D7D /* HomeViewController.swift in Sources */,
 				9EAB64832685747500AC14F8 /* Category.swift in Sources */,
 				9EAB6487268574B200AC14F8 /* APIError.swift in Sources */,
 				9EAB6489268574E000AC14F8 /* API.swift in Sources */,
