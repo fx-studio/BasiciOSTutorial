@@ -21,6 +21,7 @@
 		9EAB64852685748D00AC14F8 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB64842685748D00AC14F8 /* Drink.swift */; };
 		9EAB6487268574B200AC14F8 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB6486268574B200AC14F8 /* APIError.swift */; };
 		9EAB6489268574E000AC14F8 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB6488268574E000AC14F8 /* API.swift */; };
+		9ED38AEB2693121C008317C7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED38AEA2693121C008317C7 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		9EAB64842685748D00AC14F8 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		9EAB6486268574B200AC14F8 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		9EAB6488268574E000AC14F8 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		9ED38AEA2693121C008317C7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				9E663AE5269075E900768D7D /* HomeViewController.swift */,
+				9ED38AEA2693121C008317C7 /* HomeViewModel.swift */,
 			);
 			path = HomeVC;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				9E76DA77268F14ED00123F5E /* WelcomeViewModel2.swift in Sources */,
 				9E76DA72268EB7FD00123F5E /* WelcomeViewController.swift in Sources */,
 				9EAB64852685748D00AC14F8 /* Drink.swift in Sources */,
+				9ED38AEB2693121C008317C7 /* HomeViewModel.swift in Sources */,
 				9E663AE6269075E900768D7D /* HomeViewController.swift in Sources */,
 				9EAB64832685747500AC14F8 /* Category.swift in Sources */,
 				9EAB6487268574B200AC14F8 /* APIError.swift in Sources */,

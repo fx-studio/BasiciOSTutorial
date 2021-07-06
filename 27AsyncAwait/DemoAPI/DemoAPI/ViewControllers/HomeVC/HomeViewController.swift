@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class HomeViewController: UIViewController {
     
@@ -13,15 +14,22 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     let serialQueue = DispatchQueue(label: "serialQueue")
+    var subscriptions = Set<AnyCancellable>()
+    var viewmodel = HomeViewModel()
 
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        viewmodel.$image
+            .assign(to: \.image, on: imageView)
+            .store(in: &subscriptions)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        // Data Race on Thread UI
         DispatchQueue.concurrentPerform(iterations: 100) { i in
             detach {
                 if i % 2 == 0 {
@@ -37,6 +45,23 @@ class HomeViewController: UIViewController {
 
     // MARK: Actions
     @IBAction func start(_ sender: Any) {
+        // Completion Handle
+//        viewmodel.loadImage { image in
+//            self.imageView.image = image
+//        }
+        
+        // Publisher
+//        viewmodel.loadImage2()
+        
+        // Async/Await
+//        async {
+//            await viewmodel.loadImage3()
+//        }
+        
+        // Completion + MainActor
+        viewmodel.loadImage4 { image in
+            self.imageView.image = image
+        }
     }
     
     // MARK: Function
