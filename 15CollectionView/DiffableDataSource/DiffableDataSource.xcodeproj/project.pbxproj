@@ -71,7 +71,6 @@
 				9E56290424590D6100FE5026 /* AppDelegate */,
 				9E56291B24590DE500FE5026 /* Controllers */,
 				9E56291824590DE500FE5026 /* Models */,
-				9E56291A24590DE500FE5026 /* Views */,
 				9E56292C24590DED00FE5026 /* Resources */,
 				9E5628FB24590CF500FE5026 /* LaunchScreen.storyboard */,
 				9E5628FE24590CF500FE5026 /* Info.plist */,
@@ -95,13 +94,6 @@
 				9E56292D24590E7900FE5026 /* Flower.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		9E56291A24590DE500FE5026 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		9E56291B24590DE500FE5026 /* Controllers */ = {
